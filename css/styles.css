@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 330px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: rgb(60, 61, 60);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+#peso, #altura {
+    width: 220px;
+    height: 28px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: none
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+#btn-calcular, #btn-limpar {
+    height: 28px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+#btn-calcular {
+    background-color: rgb(60, 170, 233);
+}
+
+#btn-limpar {
+    background-color: rgb(241, 124, 14);
+}
+
+#btn-calcular:hover {
+    background-color: rgb(21, 126, 187);
+    border: 1px solid rgb(21, 126, 187);
+}
+
+#btn-limpar:hover {
+    background-color: rgb(202, 99, 3);
+    border: 1px solid rgb(202, 99, 3);
+}
+
+p {
+    margin: 16px auto;
+    text-align: center;
+    font-size: 16px;
+    height: 60px;
+    width: 220px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
