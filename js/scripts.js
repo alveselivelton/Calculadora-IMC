@@ -1,9 +1,9 @@
-let resultado = document.getElementById("resultado");
+const resultado = document.getElementById("resultado");
 
-function calcular() {
-    let peso = parseFloat(document.getElementById("peso").value);
-    let altura = parseFloat(document.getElementById("altura").value);
-    let imc = (peso / altura ** 2).toFixed(1);
+const calcular = () => {
+    const peso = parseFloat(document.getElementById("peso").value);
+    const altura = parseFloat(document.getElementById("altura").value);
+    const imc = (peso / altura ** 2).toFixed(1);
 
     if (imc < 18.5) {
         resultado.innerHTML = `O seu IMC é ${imc} - Magreza`;
@@ -20,7 +20,7 @@ function calcular() {
     }
 }
 
-function limpar() {
+const limpar = () => { 
     document.getElementById("peso").value = "";
     document.getElementById("altura").value = "";
     resultado.innerHTML = "";
